@@ -1,0 +1,17 @@
+<%- include('./partials/head.ejs') %> 
+
+<div class="container">
+    <% j.forEach(element => {%> 
+    <div class="jotter-title">
+        <h3><%= element.title %> </h3>
+    </div>
+    <div class="jotter-body">
+        <hr>
+        <i><p><%= element.snippet %> </p></i>
+        <hr>
+        <p><%= element.detail %> </p>
+    </div>
+    <% }) %>
+</div>
+
+<% include('./partials/footer.ejs') %> 
